@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+:root{
+    --bg : rgb(0, 0, 0);
+    --brdr : rgb(140, 62, 243);
+}
+
+body {
+    background-color: var(--bg);
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid var(--brdr);
+    overflow: auto;
+}
+
+.container img {
+    width: 600px;
+}
+
+.thumbnail .thumb{
+    width: 200px;
+    float: left;
+    border: 2px solid var(--brdr);
+    box-sizing: border-box;
+}
+
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+
+}
+
+.active{
+    opacity: 0.5;
+}
